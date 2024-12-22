@@ -15,12 +15,13 @@ public class LaunchBrowser {
      * Rigorous Test :-)
      */
 	@Test
-    public void shouldAnswerWithTrue() {
+    public void shouldAnswerWithTrue() throws InterruptedException {
         WebDriver driver = new ChromeDriver();
         driver.get("https://www.google.com/");
         System.out.println(driver.getCurrentUrl());
-        Assert.assertEquals(driver.getTitle(), "Gogle");
-        //driver.quit();
+        Assert.assertEquals(driver.getTitle(), "Google");
+        Thread.sleep(2000);
+        driver.quit();
         	
     }
 }
