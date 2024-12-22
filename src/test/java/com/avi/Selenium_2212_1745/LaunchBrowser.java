@@ -19,7 +19,7 @@ public class LaunchBrowser {
         WebDriver driver = new ChromeDriver();
         driver.get("https://www.google.com/");
         System.out.println(driver.getCurrentUrl());
-        Assert.assertEquals(driver.getTitle(), "Google");
+        Assert.assertEquals(driver.getTitle(), "Go1ogle");
         Thread.sleep(2000);
         driver.quit();
         	
