@@ -19,8 +19,8 @@ public class LaunchBrowser {
         WebDriver driver = new ChromeDriver();
         driver.get("https://www.google.com/");
         System.out.println(driver.getCurrentUrl());
-        Assert.assertEquals(driver.getTitle(), "Google");
-        driver.quit();
+        Assert.assertEquals(driver.getTitle(), "Gogle");
+        //driver.quit();
         	
     }
 }
